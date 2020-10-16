@@ -1,0 +1,122 @@
+.__iPhonePage {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  .__iPhoneLargeImg {
+    position: absolute;
+    top: 140px;
+    right: 180px;
+  }
+
+  .__pageText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 76px;
+    width: 50vw;
+    height: 60vh;
+    background: transparent linear-gradient(90deg, #f2f2f2 0%, #ffffff00 100%)
+      0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin: 0 100px;
+
+    h2 {
+      font: normal normal bold 32px/48px Poppins;
+      letter-spacing: 0px;
+      color: #ff3b30;
+      opacity: 1;
+      width: 113px;
+      height: 45px;
+      text-align: left;
+    }
+
+    h3 {
+      width: 674px;
+      height: 250px;
+      text-align: left;
+      font: normal normal bold 100px/110px Poppins;
+      letter-spacing: 0px;
+      color: #000000;
+      opacity: 1;
+    }
+
+    h4 {
+      width: 612px;
+      height: 83px;
+      text-align: left;
+      font: normal normal normal 25px/35px Poppins;
+      letter-spacing: 0px;
+      color: #999999;
+      opacity: 1;
+    }
+
+    p {
+      width: 612px;
+      height: 36px;
+      text-align: left;
+      font: normal normal normal 14px/35px Poppins;
+      letter-spacing: 0px;
+      color: #ff3b30;
+      opacity: 1;
+    }
+  }
+
+  .__iPhoneFrontAndBackImg {
+    align-self: center;
+
+    img {
+      margin: 46px 15px 20px 15px;
+    }
+  }
+
+  .__bars {
+    align-self: center;
+    display: flex;
+
+    .__redBar {
+      width: 50px;
+      height: 9px;
+      background: #ff3b30 0% 0% no-repeat padding-box;
+      opacity: 1;
+    }
+
+    .__grayBar {
+      width: 50px;
+      height: 9px;
+      background: #f2f2f2 0% 0% no-repeat padding-box;
+      opacity: 1;
+    }
+  }
+
+  .__callToAction {
+    position: absolute;
+    bottom: 100px;
+    left: 170px;
+
+    h4 {
+      width: 289px;
+      height: 62px;
+      text-align: left;
+      font: normal normal bold 50px/76px Poppins;
+      letter-spacing: 0px;
+      color: #cccccc;
+      opacity: 1;
+      margin: 0;
+    }
+
+    p {
+      width: 130px;
+      height: 28px;
+      text-align: left;
+      font: normal normal 600 20px/30px Poppins;
+      letter-spacing: 0px;
+      color: #ff3b30;
+      opacity: 1;
+      margin: 0;
+    }
+  }
+}

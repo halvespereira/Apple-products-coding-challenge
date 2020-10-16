@@ -1,12 +1,7 @@
 import React from "react";
 
-import { BrowserRouter, Route, Switch } from "react-router-dom";
-
-import NotFound from "./NotFound";
-import ComingProducts from "./ComingProducts";
-import Login from "./Login";
-import Welcome from "./Welcome";
-import Iphone from "./Iphone";
+import LoggedInRoutes from "./routes/LoggedInRoutes";
+import LoggedOutRoute from "./routes/LoggedOutRoute";
 
 const Main = ({
   email,
@@ -19,7 +14,7 @@ const Main = ({
 }) => {
   if (!isUser) {
     return (
-      <Login
+      <LoggedOutRoute
         email={email}
         setEmail={setEmail}
         setIsUser={setIsUser}
@@ -29,20 +24,7 @@ const Main = ({
     );
   } else {
     return (
-      <BrowserRouter>
-        <Switch>
-          <Route
-            exact
-            path="/"
-            render={(props) => (
-              <ComingProducts {...props} shippingDates={shippingDates} />
-            )}
-          />
-          <Route path="/welcome" render={(props) => <Welcome {...props} />} />
-          <Route path="/iphone" component={Iphone} />
-          <Route component={NotFound} />
-        </Switch>
-      </BrowserRouter>
+      <LoggedInRoutes shippingDates={shippingDates} setIsUser={setIsUser} />
     );
   }
 };

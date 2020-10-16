@@ -1,26 +1,8 @@
 import React from "react";
-import "./Login.scss";
 
-const Login = ({ email, setEmail, setIsUser, password, setPassword }) => {
-  const userLogin = (e) => {
-    e.preventDefault();
+import "./LoginForm.scss";
 
-    if (!email || !password) {
-      alert("Must enter email and password");
-    } else {
-      const obj = {
-        email,
-        password,
-      };
-
-      localStorage.setItem("user", JSON.stringify(obj));
-      setIsUser(true);
-
-      setPassword("");
-      setEmail("");
-    }
-  };
-
+const LoginForm = ({ setEmail, email, password, setPassword, userLogin }) => {
   return (
     <div className="__Login">
       <form>
@@ -47,4 +29,4 @@ const Login = ({ email, setEmail, setIsUser, password, setPassword }) => {
   );
 };
 
-export default Login;
+export default LoginForm;

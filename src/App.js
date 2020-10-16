@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import "./App.scss";
 
 import Main from "./components/Main";
-
+import Loading from "./components/loadingPage/Loading";
 import fetchShippingDates from "./fetchData";
 
 function App() {
@@ -39,7 +39,7 @@ function App() {
     );
   }
 
-  return null;
+  return <Loading />;
 }
 
 export default App;
