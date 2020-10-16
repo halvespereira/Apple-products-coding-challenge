@@ -1,26 +1,45 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+
+import "./App.scss";
+
+import Main from "./components/Main";
+
+import fetchShippingDates from "./fetchData";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const [isUser, setIsUser] = useState(false);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [shippingDates, setShippingDates] = useState(null);
+
+  useEffect(() => {
+    fetchShippingDates(setShippingDates);
+    const localStorageRef = localStorage.getItem("user");
+
+    if (localStorageRef) {
+      setIsUser(true);
+    } else {
+      setIsUser(false);
+    }
+  }, []);
+
+  if (shippingDates) {
+    return (
+      <div className="App">
+        <Main
+          email={email}
+          setEmail={setEmail}
+          isUser={isUser}
+          setIsUser={setIsUser}
+          password={password}
+          setPassword={setPassword}
+          shippingDates={shippingDates}
+        />
+      </div>
+    );
+  }
+
+  return null;
 }
 
 export default App;

@@ -1,0 +1,72 @@
+@import "./variables.scss";
+
+.__Login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $backgroundGradient;
+  height: 100vh;
+  width: 100vw;
+
+  form {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: $loginFormBoxShadow;
+    opacity: 1;
+    width: $loginFormWidth;
+    height: $loginFormHeight;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    label {
+      text-align: left;
+      font: normal normal normal 16px/16px Poppins;
+      letter-spacing: 0px;
+      color: #000000;
+      opacity: 1;
+      width: 411px;
+      margin: 30px auto 7px auto;
+    }
+
+    h3 {
+      text-align: center;
+      font: bolder 36px/55px Poppins;
+      letter-spacing: 0px;
+      color: #000000;
+      opacity: 1;
+      height: 80px;
+      justify-self: center;
+    }
+
+    input {
+      width: 411px;
+      height: 54px;
+      background: #ffffff 0% 0% no-repeat padding-box;
+      border: 1px solid #707070;
+      opacity: 1;
+      margin: 0 auto;
+    }
+
+    button {
+      width: 174px;
+      height: 54px;
+      background: #000000 0% 0% no-repeat padding-box;
+      opacity: 1;
+      color: #ffffff;
+      margin: 30px auto;
+      outline-width: 0;
+      border: 0;
+      cursor: pointer;
+    }
+
+    ::placeholder {
+      width: 118px;
+
+      font: normal normal normal 14px/21px Poppins;
+      letter-spacing: 0px;
+      color: #cccccc;
+      opacity: 1;
+      transform: translateX(32px);
+    }
+  }
+}
