@@ -9,7 +9,7 @@ const Loading = () => {
   return (
     <div className="__Loading">
       <img src={appleLogo} alt="spinner" width="150" />
-      <p>Loading...</p>
+      <p>Fetching data...</p>
     </div>
   );
 };

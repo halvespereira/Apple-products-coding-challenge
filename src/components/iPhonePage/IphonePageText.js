@@ -13,7 +13,7 @@ const IphonePageText = ({ date }) => {
         The future is here. Join the iPhone Upgrade <br /> Program to get the
         latest iPhone - NOW!
       </h4>
-      <p>Starts shipping {date}</p>
+      <p>Starts shipping {date ? date : "..."}</p>
     </div>
   );
 };

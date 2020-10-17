@@ -2,8 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import "./App.scss";
 
-import Main from "./components/Main";
-import Loading from "./components/loadingPage/Loading";
+import MainContent from "./components/MainContent";
 import fetchShippingDates from "./fetchData";
 
 function App() {
@@ -24,26 +23,20 @@ function App() {
     localStorageRef ? setIsUser(true) : setIsUser(false);
   }, []);
 
-  if (shippingDates) {
-    return (
-      <div className="App">
-        {/* Main component triggered once response from API is successfully fetched */}
-        <Main
-          // Passing down all the state as well as response from API
-          email={email}
-          setEmail={setEmail}
-          isUser={isUser}
-          setIsUser={setIsUser}
-          password={password}
-          setPassword={setPassword}
-          shippingDates={shippingDates}
-        />
-      </div>
-    );
-  }
-
-  // Loading component is rendered while shipping dates is being fetched
-  return <Loading />;
+  return (
+    <div className="App">
+      <MainContent
+        // Passing down all the state as well as response from API
+        email={email}
+        setEmail={setEmail}
+        isUser={isUser}
+        setIsUser={setIsUser}
+        password={password}
+        setPassword={setPassword}
+        shippingDates={shippingDates}
+      />
+    </div>
+  );
 }
 
 export default App;

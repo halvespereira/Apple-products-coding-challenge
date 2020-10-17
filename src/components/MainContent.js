@@ -4,7 +4,7 @@ import LoggedInRoutes from "./routes/LoggedInRoutes";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Login from "./loginPage/Login";
 
-const Main = ({
+const MainContent = ({
   email,
   setEmail,
   isUser,
@@ -35,11 +35,8 @@ const Main = ({
         </Switch>
       </BrowserRouter>
     );
-  } else {
-    return (
-      <LoggedInRoutes shippingDates={shippingDates} setIsUser={setIsUser} />
-    );
   }
+  return <LoggedInRoutes shippingDates={shippingDates} setIsUser={setIsUser} />;
 };
 
-export default Main;
+export default MainContent;
