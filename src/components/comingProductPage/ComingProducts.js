@@ -8,6 +8,7 @@ import appleLogo from "../assets/apple-logo.jpg";
 const ComingProducts = () => {
   const history = useHistory();
 
+  // Takes to Welcome page
   const toWelcome = () => {
     history.push("/welcome");
   };

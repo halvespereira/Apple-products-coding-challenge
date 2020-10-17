@@ -6,6 +6,8 @@ import LoginForm from "./LoginForm";
 
 const Login = ({ email, setEmail, setIsUser, password, setPassword }) => {
   const history = useHistory();
+
+  // login function. It validates to make sure user typed both email and password. Saves form info in local storage.
   const userLogin = (e) => {
     e.preventDefault();
 

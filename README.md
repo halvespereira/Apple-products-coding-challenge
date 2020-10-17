@@ -30,7 +30,7 @@ To install the node modules on your local machine, run:
 
 To run the application in development mode
 
-### `yarn start`
+### `npm start`
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.

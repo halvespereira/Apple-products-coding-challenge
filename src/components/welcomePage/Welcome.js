@@ -7,6 +7,7 @@ import "./Welcome.scss";
 
 import appleIcon from "../assets/iphone-icon.jpg";
 
+// Welcome page. This is rendered when clicking anywhere in the Coming Products page.
 const Welcome = ({ setIsUser }) => {
   return (
     <div className="__Welcome">

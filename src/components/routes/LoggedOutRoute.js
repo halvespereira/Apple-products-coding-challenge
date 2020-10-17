@@ -12,6 +12,7 @@ const LoggedOutRoute = ({
   setPassword,
 }) => {
   return (
+    // When user is logged out, the login page is rendered.
     <BrowserRouter>
       <Switch>
         <Route

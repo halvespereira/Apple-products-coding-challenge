@@ -7,6 +7,7 @@ import ComingProducts from "../comingProductPage/ComingProducts";
 import Welcome from "../welcomePage/Welcome";
 import IphonePage from "../iPhonePage/IphonePage";
 
+// Using react-router-dom. If user is logged in, ComingProducts is always the home page.
 const LoggedInRoutes = ({ shippingDates, setIsUser }) => {
   return (
     <BrowserRouter>

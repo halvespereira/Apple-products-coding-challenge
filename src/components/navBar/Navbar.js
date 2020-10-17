@@ -7,6 +7,7 @@ import appleLogo from "../assets/apple-logo-black-background.png";
 const NavBar = ({ setIsUser }) => {
   const history = useHistory();
 
+  // Deletes the user info from local storage and takes the user back to the login page
   const logOut = () => {
     localStorage.removeItem("user");
     setIsUser(false);

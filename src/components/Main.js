@@ -12,6 +12,7 @@ const Main = ({
   setPassword,
   shippingDates,
 }) => {
+  // Checking if user is logged in and rendering the adequate component using react-router-dom
   if (!isUser) {
     return (
       <LoggedOutRoute
