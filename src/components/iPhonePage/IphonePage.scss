@@ -119,4 +119,179 @@
       margin: 0;
     }
   }
+
+  @media (max-width: 1400px) {
+    .__iPhoneLargeImg {
+      width: 300px;
+      right: 130px;
+    }
+
+    .__pageText {
+      width: 40vw;
+      height: 60vh;
+
+      h2 {
+        font-size: 25px;
+      }
+
+      h3 {
+        font-size: 58px;
+        line-height: 80px;
+        height: 180px;
+      }
+
+      h4 {
+        font-size: 23px;
+      }
+
+      p {
+        font-size: 13px;
+      }
+    }
+  }
+
+  @media (max-width: 1150px) {
+    .__iPhoneLargeImg {
+      width: 250px;
+      right: 80px;
+    }
+
+    .__pageText {
+      width: 30vw;
+      height: 60vh;
+
+      h2 {
+        font-size: 20px;
+      }
+
+      h3 {
+        font-size: 45px;
+        line-height: 60px;
+        height: 140px;
+      }
+
+      h4 {
+        font-size: 19px;
+      }
+
+      p {
+        font-size: 13px;
+      }
+    }
+
+    .__callToAction {
+      h4 {
+        font-size: 35px;
+      }
+    }
+  }
+
+  @media (max-width: 950px) {
+    .__iPhoneLargeImg {
+      width: 170px;
+      right: 90px;
+      top: 100px;
+    }
+
+    .__pageText {
+      margin: 0;
+    }
+
+    .__iPhoneFrontAndBackImg {
+      align-self: flex-end;
+      margin-right: 50px;
+    }
+
+    .__bars {
+      align-self: flex-end;
+      margin-right: 100px;
+    }
+
+    .__callToAction {
+      left: 40px;
+    }
+  }
+
+  @media (max-width: 675px) {
+    .__iPhoneLargeImg {
+      width: 112px;
+      right: 60px;
+      top: 180px;
+    }
+    .__pageText {
+      width: 25vw;
+      height: 60vh;
+
+      h2 {
+        font-size: 17px;
+      }
+
+      h3 {
+        font-size: 35px;
+        line-height: 45px;
+        height: 109px;
+      }
+
+      h4 {
+        font-size: 16px;
+      }
+
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+    .__pageText {
+      padding-left: 7px;
+      height: 50vh;
+
+      p {
+        font-size: 15px;
+      }
+
+      h2 {
+        font-size: 21px;
+      }
+
+      h3 {
+        font-size: 39px;
+      }
+    }
+
+    .__iPhoneLargeImg {
+      width: 100px;
+      right: 10px;
+      top: 130px;
+    }
+
+    .__iPhoneFrontAndBackImg {
+      align-self: flex-center;
+      margin-right: 90px;
+      transform: translateY(-40px);
+    }
+
+    .__bars {
+      align-self: flex-end;
+      margin-right: 145px;
+      transform: translateY(-40px);
+    }
+
+    .__callToAction {
+      left: 110px;
+      bottom: 7px;
+
+      h4 {
+        font-size: 27px;
+        line-height: 90px;
+      }
+
+      p {
+        font-size: 20px;
+        text-align: center;
+        margin-left: 10px;
+      }
+    }
+  }
 }

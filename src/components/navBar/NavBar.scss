@@ -4,6 +4,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 0 3px 0;
 
   .__navLinks {
     margin: 0 17%;
@@ -35,5 +36,29 @@ nav {
       align-self: flex-start;
       cursor: pointer;
     }
+  }
+
+  @media (max-width: 750px) {
+    .__navLinks {
+      a {
+        margin-right: 60px;
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+    height: 12vh;
+
+    .__navLinks {
+      width: 200px;
+
+      a {
+        margin-right: 30px;
+      }
+    }
+  }
+
+  @media (max-height: 450px) {
+    height: 25vh;
   }
 }

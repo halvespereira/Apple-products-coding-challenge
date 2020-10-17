@@ -69,4 +69,41 @@
       transform: translateX(32px);
     }
   }
+
+  @media (max-width: 500px) {
+    form {
+      width: 250px;
+
+      label {
+        margin-left: 20px;
+      }
+
+      h3 {
+        font-size: 30px;
+      }
+
+      input {
+        width: 200px;
+      }
+    }
+  }
+
+  @media (max-height: 500px) {
+    form {
+      height: 300px;
+      width: 400px;
+
+      input {
+        width: 320px;
+      }
+
+      label {
+        margin-left: 35px;
+      }
+
+      button {
+        height: 70px;
+      }
+    }
+  }
 }
