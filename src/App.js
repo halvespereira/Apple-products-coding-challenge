@@ -24,7 +24,7 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className="__App">
       <MainContent
         // Passing down all the state as well as response from API
         email={email}

@@ -8,7 +8,7 @@ import appleLogo from "../assets/apple-logo-black-background.png";
 const Loading = () => {
   return (
     <div className="__Loading">
-      <img src={appleLogo} alt="spinner" width="150" />
+      <img src={appleLogo} alt="Apple logo" width="150" />
       <p>Fetching data...</p>
     </div>
   );

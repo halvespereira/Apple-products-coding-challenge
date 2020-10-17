@@ -5,7 +5,7 @@ import NavBar from "../navBar/Navbar";
 import IphonePageBody from "./IphonePageBody";
 import Loading from "../loadingPage/Loading";
 
-// This page is rendered when clicking on the iPhone option in the Welcome page
+// This page is rendered when clicking on the iPhone link or icon in the Welcome page
 const IphonePage = ({ setIsUser, shippingDates }) => {
   if (shippingDates) {
     return (
@@ -14,9 +14,8 @@ const IphonePage = ({ setIsUser, shippingDates }) => {
         <IphonePageBody shippingDates={shippingDates} />
       </div>
     );
-  } else {
-    return <Loading />;
   }
+  return <Loading />;
 };
 
 export default IphonePage;
