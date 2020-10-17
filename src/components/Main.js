@@ -1,7 +1,8 @@
 import React from "react";
 
 import LoggedInRoutes from "./routes/LoggedInRoutes";
-import LoggedOutRoute from "./routes/LoggedOutRoute";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Login from "./loginPage/Login";
 
 const Main = ({
   email,
@@ -15,13 +16,24 @@ const Main = ({
   // Checking if user is logged in and rendering the adequate component using react-router-dom
   if (!isUser) {
     return (
-      <LoggedOutRoute
-        email={email}
-        setEmail={setEmail}
-        setIsUser={setIsUser}
-        password={password}
-        setPassword={setPassword}
-      />
+      <BrowserRouter>
+        <Switch>
+          <Route
+            exact
+            path="/"
+            render={(props) => (
+              <Login
+                {...props}
+                email={email}
+                setEmail={setEmail}
+                setIsUser={setIsUser}
+                password={password}
+                setPassword={setPassword}
+              />
+            )}
+          />
+        </Switch>
+      </BrowserRouter>
     );
   } else {
     return (
